@@ -7,6 +7,6 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-response = requests.request("POST", url, headers=headers, data=payload)
+response = requests.request("POST", url, headers=headers, data=payload, timeout=60)
 #print(response.content)
 print(response.text)
